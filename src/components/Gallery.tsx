@@ -1,4 +1,11 @@
-const items = [
+type GalleryItem = {
+  title: string;
+  desc: string;
+  img: string;
+  badge?: string;
+};
+
+const items: GalleryItem[] = [
   {
     title: "Гранитные памятники",
     desc: "Изготовление и установка из натурального гранита с гравировкой",
@@ -15,6 +22,11 @@ const items = [
     img: "https://cdn.poehali.dev/projects/c0271dda-b616-44ea-8d09-89d235f2682b/files/095626d2-ad1d-4719-ac21-5ec1597c46e7.jpg",
   },
   {
+    title: "Резные гранитные памятники",
+    desc: "Памятники с художественной резьбой: ангелы, цветы, орнаменты — ручная работа по граниту",
+    img: "https://cdn.poehali.dev/projects/c0271dda-b616-44ea-8d09-89d235f2682b/files/afd2e68c-db2f-4218-984e-7658651789aa.jpg",
+  },
+  {
     title: "Венки и цветы",
     desc: "Траурные венки и букеты из живых и искусственных цветов, ленты с надписями",
     img: "https://cdn.poehali.dev/projects/c0271dda-b616-44ea-8d09-89d235f2682b/files/fd332709-e784-4969-9c82-3980ac3c8c66.jpg",
@@ -23,6 +35,12 @@ const items = [
     title: "Благоустройство могил",
     desc: "Укладка плитки, посев газона, озеленение, уборка — полный уход за местом захоронения",
     img: "https://cdn.poehali.dev/projects/c0271dda-b616-44ea-8d09-89d235f2682b/files/6ef613fb-04d1-49ed-8da9-1fcc683e679d.jpg",
+  },
+  {
+    title: "Похороны военных",
+    desc: "Полное сопровождение военных похорон: почётный караул, государственная символика, координация с воинской частью",
+    img: "https://cdn.poehali.dev/projects/c0271dda-b616-44ea-8d09-89d235f2682b/files/9c543cf2-8316-402b-8e76-c5ca37877fe2.jpg",
+    badge: "Отдельная услуга",
   },
 ];
 
@@ -35,12 +53,17 @@ export default function Gallery() {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {items.map((item) => (
             <div key={item.title} className="group overflow-hidden bg-white">
-              <div className="overflow-hidden h-64">
+              <div className="overflow-hidden h-64 relative">
                 <img
                   src={item.img}
                   alt={item.title}
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                 />
+                {item.badge && (
+                  <span className="absolute top-3 left-3 bg-black text-white text-xs uppercase tracking-wider px-3 py-1">
+                    {item.badge}
+                  </span>
+                )}
               </div>
               <div className="pt-4 pb-6 px-1">
                 <p className="font-semibold text-black mb-1">{item.title}</p>
