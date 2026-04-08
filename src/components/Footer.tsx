@@ -28,6 +28,12 @@ export default function Footer() {
                 >
                   Благоустройство
                 </a>
+                <a
+                  href="#services"
+                  className="text-white hover:text-neutral-400 transition-colors duration-300 text-sm sm:text-base"
+                >
+                  Венки и цветы
+                </a>
               </div>
               <div className="flex flex-col gap-1 sm:gap-2">
                 <h3 className="mb-1 sm:mb-2 uppercase text-neutral-400 text-xs sm:text-sm">Контакты</h3>
@@ -44,7 +50,10 @@ export default function Footer() {
                   Оставить заявку
                 </a>
                 <span className="text-neutral-400 text-sm sm:text-base">
-                  Саранск · Круглосуточно
+                  Саранск, ул. Гагарина, д. 14
+                </span>
+                <span className="text-neutral-400 text-sm sm:text-base">
+                  Круглосуточно
                 </span>
               </div>
             </div>

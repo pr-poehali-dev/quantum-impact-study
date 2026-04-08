@@ -14,6 +14,16 @@ const items = [
     desc: "Металлические, деревянные и гранитные кресты, кованые и сварные ограды",
     img: "https://cdn.poehali.dev/projects/c0271dda-b616-44ea-8d09-89d235f2682b/files/095626d2-ad1d-4719-ac21-5ec1597c46e7.jpg",
   },
+  {
+    title: "Венки и цветы",
+    desc: "Траурные венки и букеты из живых и искусственных цветов, ленты с надписями",
+    img: "https://cdn.poehali.dev/projects/c0271dda-b616-44ea-8d09-89d235f2682b/files/fd332709-e784-4969-9c82-3980ac3c8c66.jpg",
+  },
+  {
+    title: "Благоустройство могил",
+    desc: "Укладка плитки, посев газона, озеленение, уборка — полный уход за местом захоронения",
+    img: "https://cdn.poehali.dev/projects/c0271dda-b616-44ea-8d09-89d235f2682b/files/6ef613fb-04d1-49ed-8da9-1fcc683e679d.jpg",
+  },
 ];
 
 export default function Gallery() {
@@ -22,7 +32,7 @@ export default function Gallery() {
       <div className="max-w-6xl mx-auto">
         <p className="text-xs uppercase tracking-widest text-neutral-400 mb-3">Наши товары</p>
         <h2 className="text-2xl sm:text-3xl font-bold text-black mb-10">Широкий ассортимент</h2>
-        <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {items.map((item) => (
             <div key={item.title} className="group overflow-hidden bg-white">
               <div className="overflow-hidden h-64">
