@@ -8,10 +8,25 @@ const services = [
 export default function Featured() {
   return (
     <div id="services" className="flex flex-col lg:flex-row lg:justify-between lg:items-center min-h-screen px-6 py-12 lg:py-0 bg-white">
-      <div className="flex-1 h-[400px] lg:h-[800px] mb-8 lg:mb-0 lg:order-2">
+      <div className="flex-1 h-[400px] lg:h-[800px] mb-8 lg:mb-0 lg:order-2 grid grid-cols-2 grid-rows-2 gap-1">
         <img
-          src="/images/mountain-landscape.jpg"
-          alt="Спокойный природный пейзаж"
+          src="https://cdn.poehali.dev/projects/c0271dda-b616-44ea-8d09-89d235f2682b/files/bc7f3e02-5e78-4099-bb3b-6ce0408ca6a4.jpg"
+          alt="Похоронная церемония"
+          className="w-full h-full object-cover"
+        />
+        <img
+          src="https://cdn.poehali.dev/projects/c0271dda-b616-44ea-8d09-89d235f2682b/files/92e95fe9-7403-42b4-ae57-05dbc14ea39f.jpg"
+          alt="Гранитный памятник"
+          className="w-full h-full object-cover"
+        />
+        <img
+          src="https://cdn.poehali.dev/projects/c0271dda-b616-44ea-8d09-89d235f2682b/files/dfc5a9c7-ddd4-43e4-9ec5-65f03d3172ae.jpg"
+          alt="Кованые ограды"
+          className="w-full h-full object-cover"
+        />
+        <img
+          src="https://cdn.poehali.dev/projects/c0271dda-b616-44ea-8d09-89d235f2682b/files/7da5b290-110f-4b5d-85cc-ccc502dc968e.jpg"
+          alt="Траурный венок"
           className="w-full h-full object-cover"
         />
       </div>
