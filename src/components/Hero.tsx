@@ -35,10 +35,10 @@ export default function Hero() {
           Полный комплекс ритуальных услуг: гробы, гранитные памятники, кресты и благоустройство могил. Мы рядом в трудный момент.
         </p>
         <a
-          href="#contact"
+          href="tel:+79297473002"
           className="inline-block bg-white text-black px-8 py-3 uppercase tracking-wide text-sm font-medium hover:bg-neutral-200 transition-colors duration-300"
         >
-          Позвонить нам
+          +7 (929) 747-30-02
         </a>
       </div>
     </div>

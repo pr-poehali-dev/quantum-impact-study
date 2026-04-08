@@ -32,10 +32,10 @@ export default function Footer() {
               <div className="flex flex-col gap-1 sm:gap-2">
                 <h3 className="mb-1 sm:mb-2 uppercase text-neutral-400 text-xs sm:text-sm">Контакты</h3>
                 <a
-                  href="tel:+79000000000"
+                  href="tel:+79297473002"
                   className="text-white hover:text-neutral-400 transition-colors duration-300 text-sm sm:text-base"
                 >
-                  +7 (900) 000-00-00
+                  +7 (929) 747-30-02
                 </a>
                 <a
                   href="#contact"
