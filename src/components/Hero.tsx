@@ -1,5 +1,6 @@
 import { useScroll, useTransform, motion } from "framer-motion";
 import { useRef } from "react";
+import CallbackDialog from "@/components/CallbackDialog";
 
 export default function Hero() {
   const container = useRef<HTMLDivElement>(null);
@@ -34,12 +35,15 @@ export default function Hero() {
         <p className="text-lg md:text-xl max-w-2xl mx-auto opacity-90 mb-8">
           Полный комплекс ритуальных услуг: гробы, гранитные памятники, кресты и благоустройство могил. Мы рядом в трудный момент.
         </p>
-        <a
-          href="tel:+79297473002"
-          className="inline-block bg-white text-black px-8 py-3 uppercase tracking-wide text-sm font-medium hover:bg-neutral-200 transition-colors duration-300"
-        >
-          +7 (929) 747-30-02
-        </a>
+        <div className="flex flex-col sm:flex-row items-center justify-center gap-3">
+          <a
+            href="tel:+79297473002"
+            className="inline-block bg-white text-black px-8 py-3 uppercase tracking-wide text-sm font-medium hover:bg-neutral-200 transition-colors duration-300"
+          >
+            +7 (929) 747-30-02
+          </a>
+          <CallbackDialog />
+        </div>
       </div>
     </div>
   );
