@@ -44,7 +44,7 @@ export default function Footer() {
                   Оставить заявку
                 </a>
                 <span className="text-neutral-400 text-sm sm:text-base">
-                  Круглосуточно
+                  Саранск · Круглосуточно
                 </span>
               </div>
             </div>
